@@ -70,9 +70,71 @@
             margin-top: 10px;
             font-weight: bold;
         }
+
+        /* Navbar styles */
+        .container-fluid.nav-bar {
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+            z-index: 100;
+        }
+        .navbar-brand {
+            font-family: 'New Amsterdam', sans-serif;
+            text-align: center;
+            font-size: 24px;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+        }
+        .nav-item {
+            margin: 0 15px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
     </style>
 </head>
 <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="" style="justify-content: center; align-items: center; text-align: center;" class="navbar-brand p-0">
+                <h1 class="display-6 text-dark" style="font-family: New Amsterdam;"> <img src="./img/logo2.0.png" style="height: 30px;" alt=""> JK Palms and Garden</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="event.html" class="nav-item nav-link">Events</a>
+                    <!-- Booking Dropdown -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bookings</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="football.html" class="dropdown-item">Football Matches</a>
+                            <a href="palmyard.html" class="dropdown-item">Palm-Yard</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://web.facebook.com/JKPalmsGarden/?_rdc=1&_rdr" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/jkpalms/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <a href="./contact.html" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
     <div class="overlay"></div>
     <div class="form-container">
         <h2>Book Your Slot</h2>
